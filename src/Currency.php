@@ -1,5 +1,5 @@
 <?php
-namespace www;
+namespace www\Vladimirhw4;
 class Currency
 {
     private $isoCode;

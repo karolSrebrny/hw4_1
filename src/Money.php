@@ -1,5 +1,5 @@
 <?php
-namespace www;
+namespace www\Vladimirhw4;
 class Money
 {
     private $amount;
@@ -52,27 +52,16 @@ class Money
             return false;
         }
     }
-//    public function add($add)
-//    {
-//        if (!$this->getCurrency() == $add->getCurrency()) {
-//            throw  new  Exception('123');
-//        }
-//        $this->getAmount() + $add -> getAmount();
-//
-//        $addMoney = new Money(0,0);
-//
-//        $addMoney = $this->setAmount($amount);
-//
-//        $addMoney = $this->setCurrency($currency);
-//
-//        return ($addMoney);
-//
-//    }
+    public function add(Money $add)
+    {
+        if ($this->getCurrency() !== $add->getCurrency()){
+            throw new \Exception('Different currencies');
+        } $summ = ($this->getAmount() + $add ->getAmount());
+        return $summ;
+        return $add->getCurrency();
 
+    }
 }
-
-//$addd = $m1->add($m);
-//var_dump($addd);
 
 
 

@@ -140,5 +140,5 @@ class Psr4AutoloaderClass
     }
 }
 $autoloader = new Psr4AutoloaderClass();
-$autoloader ->addNamespace('www', 'src');
+$autoloader ->addNamespace('www\Vladimirhw4', 'src');
 $autoloader ->register();
